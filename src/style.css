@@ -113,15 +113,16 @@ nav a {
     border: 1px solid var(--borde);
     border-radius: 16px;
     padding: 16px 24px;
-    margin: 12px;
+    margin: 0 0 12px;
 }
 
-details [open]{
+#preguntas details[open]{
     border-color: var(--coral);
 }
 
 #preguntas summary{
     cursor: pointer;
+    font: var(--fuente-titulos);
     font-weight: bold;
 }
 
