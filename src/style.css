@@ -154,3 +154,10 @@ nav a {
     font-family: var(--fuente-titulos);
     font-weight: bold;
 }
+
+#inicio{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
