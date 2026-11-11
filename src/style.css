@@ -122,7 +122,7 @@ nav a {
 
 #preguntas summary{
     cursor: pointer;
-    font: var(--fuente-titulos);
+    font-family: var(--fuente-titulos);
     font-weight: bold;
 }
 
