@@ -85,18 +85,18 @@ nav a {
     border-radius: 16px;
 }
 
-.tarjetas{
+.tarjetas {
     display: flex;
     gap: 24px;
 }
 
-.razas{
+.razas {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-.razas figure{
+.razas figure {
     margin: 0;
     background-color: var(--lila-claro);
     border-radius: 24px;
@@ -104,11 +104,11 @@ nav a {
     text-align: center;
 }
 
-.razas img{
+.razas img {
     height: 200px;
 }
 
-#preguntas details{
+#preguntas details {
     background-color: var(--blanco);
     border: 1px solid var(--borde);
     border-radius: 16px;
@@ -116,42 +116,41 @@ nav a {
     margin: 0 0 12px;
 }
 
-#preguntas details[open]{
+#preguntas details[open] {
     border-color: var(--coral);
 }
 
-#preguntas summary{
+#preguntas summary {
     cursor: pointer;
     font-family: var(--fuente-titulos);
     font-weight: bold;
 }
 
-#preguntas p{
+#preguntas p {
     color: var(--texto-suave);
     margin: 12px 0 0;
 }
 
-#como-funciona ol{
+#como-funciona ol {
     display: flex;
     margin: 0;
     padding: 0;
     gap: 24px;
-    list-style-position: inside
+    list-style-position: inside;
 }
 
-#como-funciona li{
+#como-funciona li {
     background-color: var(--blanco);
     border: 1px solid var(--borde);
     border-radius: 24px;
     box-shadow: 0 4px 20px rgba(43, 34, 53, 0.08);
-    padding: 16px;
+    padding: 24px;
     flex: 1;
-    
 }
 
-.pasos li::marker {
-  color: var(--coral);
-  font-size: 32px;
-  font-family: var(--fuente-titulos);
-  font-weight: bold;
+#como-funciona li::marker {
+    color: var(--coral);
+    font-size: 32px;
+    font-family: var(--fuente-titulos);
+    font-weight: bold;
 }
