@@ -1,0 +1,19 @@
+/* Paleta de colores Huellitas Spa */
+:root{
+    --morado: #6B3FA0;
+    --morado-oscuro: #593386;
+    --lila-claro: #F5EEFA;
+    --coral: #FF7A59;
+    --coral-oscuro: #E86745;
+    --coral-claro: #FFF0EB;
+    --crema: #FFF8F1;
+    --blanco: #FFFFFF;
+    --texto: #2B2235;
+    --texto-suave: #6E6377;
+    --borde: #EFE4D8;
+}
+
+body{
+    background-color: var(--crema);
+    color: var(--texto);
+}
