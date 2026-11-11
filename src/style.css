@@ -13,7 +13,21 @@
     --borde: #EFE4D8;
 }
 
+/* Tipografías Huellitas Spa */
+:root{
+    --fuente-titulos: 'Quicksand', sans-serif;
+    --fuente-texto: 'Instrument Sans', sans-serif;
+}
+
 body{
     background-color: var(--crema);
     color: var(--texto);
+}
+
+body{
+    font-family: var(--fuente-texto);
+}
+
+h1, h2{
+    font-family: var(--fuente-titulos);
 }
