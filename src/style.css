@@ -150,6 +150,8 @@ nav a {
 }
 
 .pasos li::marker {
-  color: red;
-  font-size: 28px;
+  color: var(--coral);
+  font-size: 32px;
+  font-family: var(--fuente-titulos);
+  font-weight: bold;
 }
