@@ -1,5 +1,6 @@
-/* Paleta de colores Huellitas Spa */
-:root{
+/* Huellitas Spa */
+:root {
+    /* Colores Huellitas Spa */
     --morado: #6B3FA0;
     --morado-oscuro: #593386;
     --lila-claro: #F5EEFA;
@@ -11,23 +12,21 @@
     --texto: #2B2235;
     --texto-suave: #6E6377;
     --borde: #EFE4D8;
-}
-
-/* Tipografías Huellitas Spa */
-:root{
+    /* Tipografías Huellitas Spa */
     --fuente-titulos: 'Quicksand', sans-serif;
     --fuente-texto: 'Instrument Sans', sans-serif;
 }
 
-body{
+body {
+    /* Colores Huellitas Spa */
     background-color: var(--crema);
     color: var(--texto);
-}
 
-body{
+    /* Tipografías Huellitas Spa */
     font-family: var(--fuente-texto);
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: var(--fuente-titulos);
 }
