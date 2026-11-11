@@ -91,5 +91,19 @@ nav a {
 }
 
 .razas{
-    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+
+.razas figure{
+    margin: 0;
+    background-color: var(--lila-claro);
+    border-radius: 24px;
+    padding: 16px;
+    text-align: center;
+}
+
+.razas img{
+    height: 200px;
 }
