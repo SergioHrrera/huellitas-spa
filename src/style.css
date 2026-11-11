@@ -107,3 +107,25 @@ nav a {
 .razas img{
     height: 200px;
 }
+
+#preguntas details{
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    padding: 16px 24px;
+    margin: 12px;
+}
+
+details [open]{
+    border-color: var(--coral);
+}
+
+#preguntas summary{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#preguntas p{
+    color: var(--texto-suave);
+    margin: 12px 0 0;
+}
