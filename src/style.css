@@ -201,7 +201,7 @@ nav a {
 .boton-secundario {
     background-color: var(--blanco);
     color: var(--morado);
-    border: 1px solid var(--borde);
+    border-color: 1px solid var(--borde);
 }
 
 .boton-principal:hover {
@@ -341,3 +341,37 @@ nav a {
 #cotizar textarea:focus {
     outline: 2px solid var(--morado);
 }
+
+#cotizar fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    padding: 16px 20px;
+    gap: 12px;
+}
+
+#cotizar legend{
+    font-family: var(--fuente-titulos);
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.opcion{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#cotizar .opcion input{
+    margin: 0;
+    width: 20px;
+    accent-color: var(--morado);
+}
+
+.boton{
+    border: 1px transparent;
+    font-size: 16px;
+}
+
