@@ -240,7 +240,7 @@ nav a {
     padding: 16px;
     background-color: var(--blanco);
     border: 1px solid var(--borde);
-    box-shadow: 0 12px 32px rgba(43, 34, 53, 0.15);
+    box-shadow: 0 4px 20px rgba(43, 34, 53, 0.08);
 }
 
 .portada-insignia p{
@@ -251,7 +251,7 @@ nav a {
     font-family: var(--fuente-titulos);
 }
 
-.segundo-insignia{
+.portada-insignia-texto{
     color: var(--texto-suave);
     font-size: 14px;
 }
