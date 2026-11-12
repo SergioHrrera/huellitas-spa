@@ -194,13 +194,41 @@
           <label for="nombre">Tu nombre</label>
           <input id="nombre" name="nombre" type="text" placeholder="Ej: Laura">
         </div>
-        <div class="campo2">
+        <div class="campo">
           <label for="barrio">Barrio</label>
           <input id="barrio" name="barrio" type="text" placeholder="Ej: Alto Prado">
         </div>
-        <div class="campo3">
+        <div class="campo">
           <label for="raza">Raza de tu perro</label>
           <input id="raza" name="raza" type="text" placeholder="Ej: Poodle">
+          <div class="campo">
+            <label for="tamaño">Tamaño</label>
+            <select name="tamano" id="tamano">
+              <option value="">Elige un tamaño</option>
+              <option value="pequeno">Pequeño (hasta 10kg)</option>
+              <option value="mediano">Mediano (de 10 a 25 kg)</option>
+              <option value="grande">Grande (más de 25 kg)</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>¿Qué servicios quieres?</legend>
+            <div class="opcion">
+            <input type="checkbox" id="servicio-bano" name="servicios" value="bano">
+            <label for="bano">Baño completo, desde $60.000</label>
+            </div>
+            <div class="opcion">
+            <input type="checkbox" id="servicio-corte" name="servicios" value="corte">
+            <label for="corte">Corte y estilo, desde $80.000</label>
+            </div>
+            <div class="opcion">
+            <input type="checkbox" id="servicio-secado" name="servicios" value="secado">
+            <label for="secado">Secado profesional, desde $35.000</label>
+            </div>
+            <div class="opcion">
+            <input type="checkbox" id="servicio-cepillado" name="servicios" value="cepillado">
+            <label for="cepillado">Cepillado y deslanado, desde $45.000</label>
+            </div>
+          </fieldset>
         </div>
       </form>
     </section>
