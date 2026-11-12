@@ -189,11 +189,13 @@ nav a {
     font-family: var(--fuente-titulos);
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .boton-principal {
     background-color: var(--coral);
     color: var(--blanco);
+    border: 1px solid var(--borde);
 }
 
 .boton-secundario {
@@ -269,12 +271,12 @@ nav a {
     color: var(--blanco);
 }
 
-.opiniones{
+.opiniones {
     display: flex;
     gap: 24px;
 }
 
-.opiniones figure{
+.opiniones figure {
     margin: 0;
     background-color: var(--blanco);
     color: var(--texto);
@@ -283,19 +285,19 @@ nav a {
     flex: 1;
 }
 
-.opiniones blockquote{
+.opiniones blockquote {
     margin: 0 0 16px;
 }
 
-.opiniones p{
+.opiniones p {
     margin: 0;
 }
 
-.opiniones strong{
+.opiniones strong {
     font-family: var(--fuente-titulos);
 }
 
-.opiniones span{
+.opiniones span {
     color: var(--texto-suave);
     font-size: 14px;
     display: block;

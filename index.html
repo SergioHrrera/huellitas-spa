@@ -192,11 +192,11 @@
       <form>
         <div class="campo">
           <label for="nombre">Tu nombre</label>
-          <input id="nombre" name="nombre" type="text" placeholder="Ej: Laura">
+          <input required id="nombre" name="nombre" type="text" placeholder="Ej: Laura">
         </div>
         <div class="campo">
           <label for="barrio">Barrio</label>
-          <input id="barrio" name="barrio" type="text" placeholder="Ej: Alto Prado">
+          <input required id="barrio" name="barrio" type="text" placeholder="Ej: Alto Prado">
         </div>
         <div class="campo">
           <label for="raza">Raza de tu perro</label>
@@ -204,7 +204,7 @@
         </div>
         <div class="campo">
           <label for="tamano">Tamaño</label>
-          <select name="tamano" id="tamano">
+          <select required name="tamano" id="tamano">
             <option value="">Elige un tamaño</option>
             <option value="pequeno">Pequeño (hasta 10 kg)</option>
             <option value="mediano">Mediano (de 10 a 25 kg)</option>
@@ -230,6 +230,17 @@
             <label for="servicio-cepillado">Cepillado y deslanado, desde $45.000</label>
           </div>
         </fieldset>
+        <div class="campo">
+          <label for="fecha">¿Qué día te queda bien?</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="campo">
+          <label for="comentarios">Algo que debamos saber</label>
+          <textarea name="comentarios" id="comentarios"
+           rows="4" placeholder="Ej: es nervioso con el secador"></textarea>
+        </div>
+        <div>
+          <button class="boton boton-principal">Enviar cotización por WhatsApp</button>
         </div>
       </form>
     </section>
