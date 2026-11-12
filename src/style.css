@@ -280,6 +280,7 @@ nav a {
     color: var(--texto);
     border-radius: 24px;
     padding: 24px;
+    flex: 1;
 }
 
 .opiniones blockquote{
@@ -295,7 +296,7 @@ nav a {
 }
 
 .opiniones span{
-    font-family: var(--texto-suave);
+    color: var(--texto-suave);
     font-size: 14px;
     display: block;
 }
