@@ -190,6 +190,8 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 16px;
 }
 
 .boton-principal {
@@ -201,7 +203,7 @@ nav a {
 .boton-secundario {
     background-color: var(--blanco);
     color: var(--morado);
-    border-color: 1px solid var(--borde);
+    border-color: var(--borde);
 }
 
 .boton-principal:hover {
@@ -367,11 +369,7 @@ nav a {
 #cotizar .opcion input{
     margin: 0;
     width: 20px;
+    height: 20px;
     accent-color: var(--morado);
-}
-
-.boton{
-    border: 1px transparent;
-    font-size: 16px;
 }
 
