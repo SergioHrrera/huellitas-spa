@@ -221,7 +221,7 @@ nav a {
     font-size: 14px;
 }
 
-#inicio h1{
+#inicio h1 {
     font-size: 48px;
     line-height: 1.15;
 }
@@ -231,15 +231,15 @@ nav a {
     font-size: 18px;
 }
 
-#inicio strong{
+#inicio strong {
     color: var(--texto);
 }
 
-.portada-foto{
+.portada-foto {
     position: relative;
 }
 
-.portada-insignia{
+.portada-insignia {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -251,15 +251,51 @@ nav a {
     box-shadow: 0 4px 20px rgba(43, 34, 53, 0.08);
 }
 
-.portada-insignia p{
+.portada-insignia p {
     margin: 0;
 }
 
-.portada-insignia strong{
+.portada-insignia strong {
     font-family: var(--fuente-titulos);
 }
 
-.portada-insignia-texto{
+.portada-insignia-texto {
     color: var(--texto-suave);
     font-size: 14px;
+}
+
+#testimonios {
+    background-color: var(--morado);
+    color: var(--blanco);
+}
+
+.opiniones{
+    display: flex;
+    gap: 24px;
+}
+
+.opiniones figure{
+    margin: 0;
+    background-color: var(--blanco);
+    color: var(--texto);
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.opiniones blockquote{
+    margin: 0 0 16px;
+}
+
+.opiniones p{
+    margin: 0;
+}
+
+.opiniones strong{
+    font-family: var(--fuente-titulos);
+}
+
+.opiniones span{
+    font-family: var(--texto-suave);
+    font-size: 14px;
+    display: block;
 }
