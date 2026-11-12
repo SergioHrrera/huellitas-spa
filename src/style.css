@@ -201,3 +201,28 @@ nav a {
 .boton-secundario:hover {
     background-color: var(--lila-claro);
 }
+
+.portada-etiqueta {
+    display: inline-block;
+    background-color: var(--lila-claro);
+    color: var(--morado);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-family: var(--fuente-titulos);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#inicio h1{
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.portada-descripcion {
+    color: var(--texto-suave);
+    font-size: 18px;
+}
+
+#inicio strong{
+    color: var(--texto);
+}
