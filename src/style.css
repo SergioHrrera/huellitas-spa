@@ -31,7 +31,7 @@ body {
     /* Tipografías Huellitas Spa */
     font-family: var(--fuente-texto);
 
-    margin: 0%;
+    margin: 0;
 }
 
 h1,
@@ -344,7 +344,7 @@ nav a {
     outline: 2px solid var(--morado);
 }
 
-#cotizar fieldset{
+#cotizar fieldset {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -354,22 +354,68 @@ nav a {
     gap: 12px;
 }
 
-#cotizar legend{
+#cotizar legend {
     font-family: var(--fuente-titulos);
     font-weight: bold;
     padding: 0 8px;
 }
 
-.opcion{
+.opcion {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#cotizar .opcion input{
+#cotizar .opcion input {
     margin: 0;
     width: 20px;
     height: 20px;
     accent-color: var(--morado);
 }
 
+footer {
+    padding: 56px 24px;
+    background-color: var(--texto);
+    color: var(--crema);
+}
+
+footer nav a {
+    color: var(--crema);
+}
+
+.pie-arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pie-marca p {
+    margin: 0;
+}
+
+.pie-marca strong {
+    font-family: var(--fuente-titulos);
+    font-size: 20px;
+}
+
+.pie-enlaces a {
+    color: var(--crema);
+}
+
+.pie-enlaces a:hover {
+    color: var(--coral);
+}
+
+.pie-abajo {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pie-abajo p {
+    margin: 0;
+}
