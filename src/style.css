@@ -52,7 +52,9 @@ section {
 }
 
 footer {
-    padding: 16px 24px;
+    padding: 56px 24px;
+    background-color: var(--texto);
+    color: var(--crema);
 }
 
 img {
@@ -371,16 +373,6 @@ nav a {
     width: 20px;
     height: 20px;
     accent-color: var(--morado);
-}
-
-footer {
-    padding: 56px 24px;
-    background-color: var(--texto);
-    color: var(--crema);
-}
-
-footer nav a {
-    color: var(--crema);
 }
 
 .pie-arriba {
