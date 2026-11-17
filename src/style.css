@@ -32,6 +32,9 @@ body {
     font-family: var(--fuente-texto);
 
     margin: 0;
+
+    width: 100%;
+    min-height: 100vh;
 }
 
 h1,
@@ -41,6 +44,7 @@ h3 {
 }
 
 header {
+    display: flex;
     padding: 16px 24px;
     display: flex;
     justify-content: space-between;
@@ -52,9 +56,14 @@ section {
 }
 
 footer {
+    display: flex;
     padding: 56px 24px;
     background-color: var(--texto);
     color: var(--crema);
+}
+
+*{
+    box-sizing: border-box;
 }
 
 img {
@@ -410,4 +419,13 @@ nav a {
 
 .pie-abajo p {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .tarjetas,
+    #como-funciona ol,
+    .opiniones {
+        flex-direction: column;
+    }
 }
