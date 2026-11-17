@@ -79,6 +79,7 @@ header img {
 nav ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     gap: 24px;
@@ -107,13 +108,13 @@ nav a {
     gap: 24px;
 }
 
-.razas {
+.razas-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-.razas figure {
+.razas-items figure {
     margin: 0;
     background-color: var(--lila-claro);
     border-radius: 24px;
@@ -121,7 +122,7 @@ nav a {
     text-align: center;
 }
 
-.razas img {
+.razas-items img {
     height: 200px;
 }
 
@@ -191,6 +192,7 @@ nav a {
 
 .portada-botones {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -428,4 +430,17 @@ nav a {
     .opiniones {
         flex-direction: column;
     }
+
+    #inicio{
+        grid-template-columns: 1fr;
+    }
+
+    #inicio img{
+        height: 280px;
+    }
+
+    .razas-items{
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
