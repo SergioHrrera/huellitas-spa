@@ -43,26 +43,49 @@ h3 {
     font-family: var(--fuente-titulos);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* El contenido se centra con un ancho máximo de 1152px */
+header,
+section,
+footer {
+    padding-left: max(24px, calc((100% - 1152px) / 2));
+    padding-right: max(24px, calc((100% - 1152px) / 2));
+}
+
 header {
-    display: flex;
-    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgba(255, 248, 241, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--borde);
 }
 
 section {
-    padding: 64px 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    scroll-margin-top: 72px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin: 0 0 32px;
 }
 
 footer {
-    padding: 56px 24px;
+    padding-top: 56px;
+    padding-bottom: 56px;
     background-color: var(--texto);
     color: var(--crema);
-}
-
-*{
-    box-sizing: border-box;
 }
 
 img {
@@ -79,6 +102,7 @@ nav ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
+    align-items: center;
     margin: 0;
     padding: 0;
     gap: 24px;
@@ -87,6 +111,15 @@ nav ul {
 nav a {
     color: var(--texto);
     text-decoration: none;
+}
+
+nav a:not(.boton):hover {
+    color: var(--morado);
+}
+
+nav .boton-menu {
+    color: var(--blanco);
+    padding: 10px 22px;
 }
 
 #servicios article {
@@ -426,9 +459,103 @@ nav a {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
+    align-items: start;
+}
+
+/* Detalles finales */
+.boton {
+    display: inline-block;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+}
+
+#servicios article,
+#como-funciona li,
+.razas-items figure {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#servicios article:hover,
+#como-funciona li:hover,
+.razas-items figure:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(43, 34, 53, 0.12);
+}
+
+#servicios article img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.razas-items img {
+    object-fit: contain;
+}
+
+.razas-items figcaption {
+    font-family: var(--fuente-titulos);
+    font-weight: bold;
+}
+
+#cotizar .foto-tarjeta {
+    position: sticky;
+    top: 96px;
+}
+
+#cotizar form {
+    width: 100%;
+}
+
+#cotizar .boton {
+    width: 100%;
+}
+
+@media (max-width: 960px) {
+    header nav li:not(:last-child) {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
+
+    header img {
+        height: 44px;
+    }
+
+    #inicio h1 {
+        font-size: 34px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .razas-items img {
+        height: 140px;
+    }
+
+    #cotizar .foto-tarjeta {
+        position: relative;
+        top: 0;
+    }
+
+    #cotizar form {
+        padding: 20px;
+    }
+
+    .pie-arriba,
+    .pie-abajo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .pie-enlaces ul {
+        gap: 12px 20px;
+    }
 
     .tarjetas,
     #como-funciona ol,
