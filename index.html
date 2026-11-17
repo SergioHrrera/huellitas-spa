@@ -42,11 +42,11 @@
             servicios y precios</a>
         </div>
       </div>
-      <div class="portada-foto">
+      <div class="foto-tarjeta">
         <img src="/img/bano.webp" alt="Golden retriever feliz recibiendo un baño con espuma" />
-        <div class="portada-insignia">
+        <div class="foto-insignia">
           <p><strong>Cero jaulas y sin sedación</strong></p>
-          <p class="portada-insignia-texto">Tu mascota siempre a la vista en tu terraza o patio.</p>
+          <p class="foto-insignia-texto">Tu mascota siempre a la vista en tu terraza o patio.</p>
         </div>
       </div>
     </section>
@@ -189,60 +189,71 @@
     </section>
     <section id="cotizar">
       <h2>Arma tu cotización y envíala por WhatsApp</h2>
-      <form>
-        <div class="campo">
-          <label for="nombre">Tu nombre</label>
-          <input required id="nombre" name="nombre" type="text" placeholder="Ej: Laura">
-        </div>
-        <div class="campo">
-          <label for="barrio">Barrio</label>
-          <input required id="barrio" name="barrio" type="text" placeholder="Ej: Alto Prado">
-        </div>
-        <div class="campo">
-          <label for="raza">Raza de tu perro</label>
-          <input id="raza" name="raza" type="text" placeholder="Ej: Poodle">
-        </div>
-        <div class="campo">
-          <label for="tamano">Tamaño</label>
-          <select required name="tamano" id="tamano">
-            <option value="">Elige un tamaño</option>
-            <option value="pequeno">Pequeño (hasta 10 kg)</option>
-            <option value="mediano">Mediano (de 10 a 25 kg)</option>
-            <option value="grande">Grande (más de 25 kg)</option>
-          </select>
-        </div>
-        <fieldset>
-          <legend>¿Qué servicios quieres?</legend>
-          <div class="opcion">
-            <input type="checkbox" id="servicio-bano" name="servicios" value="bano">
-            <label for="servicio-bano">Baño completo, desde $60.000</label>
+      <div class="cotizar-contenido">
+        <div class="foto-tarjeta">
+          <img src="/img/cotizar.webp"
+            alt="Golden retriever cubierto de espuma mientras una peluquera lo baña con guantes">
+          <div class="foto-insignia">
+            <p><strong>Te respondemos en menos de una hora</strong></p>
+            <p class="foto-insignia-texto">De lunes a sábado. Sin pagos por adelantado.</p>
           </div>
-          <div class="opcion">
-            <input type="checkbox" id="servicio-corte" name="servicios" value="corte">
-            <label for="servicio-corte">Corte y estilo, desde $80.000</label>
-          </div>
-          <div class="opcion">
-            <input type="checkbox" id="servicio-secado" name="servicios" value="secado">
-            <label for="servicio-secado">Secado profesional, desde $35.000</label>
-          </div>
-          <div class="opcion">
-            <input type="checkbox" id="servicio-cepillado" name="servicios" value="cepillado">
-            <label for="servicio-cepillado">Cepillado y deslanado, desde $45.000</label>
-          </div>
-        </fieldset>
-        <div class="campo">
-          <label for="fecha">¿Qué día te queda bien?</label>
-          <input type="date" id="fecha" name="fecha">
         </div>
-        <div class="campo">
-          <label for="comentarios">Algo que debamos saber</label>
-          <textarea name="comentarios" id="comentarios" rows="4"
-            placeholder="Ej: es nervioso con el secador"></textarea>
-        </div>
-        <div>
-          <button type="submit" class="boton boton-principal">Enviar cotización por WhatsApp</button>
-        </div>
-      </form>
+
+        <form>
+          <div class="campo">
+            <label for="nombre">Tu nombre</label>
+            <input required id="nombre" name="nombre" type="text" placeholder="Ej: Laura">
+          </div>
+          <div class="campo">
+            <label for="barrio">Barrio</label>
+            <input required id="barrio" name="barrio" type="text" placeholder="Ej: Alto Prado">
+          </div>
+          <div class="campo">
+            <label for="raza">Raza de tu perro</label>
+            <input id="raza" name="raza" type="text" placeholder="Ej: Poodle">
+          </div>
+          <div class="campo">
+            <label for="tamano">Tamaño</label>
+            <select required name="tamano" id="tamano">
+              <option value="">Elige un tamaño</option>
+              <option value="pequeno">Pequeño (hasta 10 kg)</option>
+              <option value="mediano">Mediano (de 10 a 25 kg)</option>
+              <option value="grande">Grande (más de 25 kg)</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>¿Qué servicios quieres?</legend>
+            <div class="opcion">
+              <input type="checkbox" id="servicio-bano" name="servicios" value="bano">
+              <label for="servicio-bano">Baño completo, desde $60.000</label>
+            </div>
+            <div class="opcion">
+              <input type="checkbox" id="servicio-corte" name="servicios" value="corte">
+              <label for="servicio-corte">Corte y estilo, desde $80.000</label>
+            </div>
+            <div class="opcion">
+              <input type="checkbox" id="servicio-secado" name="servicios" value="secado">
+              <label for="servicio-secado">Secado profesional, desde $35.000</label>
+            </div>
+            <div class="opcion">
+              <input type="checkbox" id="servicio-cepillado" name="servicios" value="cepillado">
+              <label for="servicio-cepillado">Cepillado y deslanado, desde $45.000</label>
+            </div>
+          </fieldset>
+          <div class="campo">
+            <label for="fecha">¿Qué día te queda bien?</label>
+            <input type="date" id="fecha" name="fecha">
+          </div>
+          <div class="campo">
+            <label for="comentarios">Algo que debamos saber</label>
+            <textarea name="comentarios" id="comentarios" rows="4"
+              placeholder="Ej: es nervioso con el secador"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="boton boton-principal">Enviar cotización por WhatsApp</button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer>

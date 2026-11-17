@@ -56,7 +56,6 @@ section {
 }
 
 footer {
-    display: flex;
     padding: 56px 24px;
     background-color: var(--texto);
     color: var(--crema);
@@ -180,7 +179,7 @@ nav a {
     align-items: center;
 }
 
-.portada-foto img {
+.foto-tarjeta img {
     height: 440px;
     width: 100%;
     border-radius: 24px;
@@ -252,11 +251,11 @@ nav a {
     color: var(--texto);
 }
 
-.portada-foto {
+.foto-tarjeta {
     position: relative;
 }
 
-.portada-insignia {
+.foto-insignia {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -268,15 +267,15 @@ nav a {
     box-shadow: 0 4px 20px rgba(43, 34, 53, 0.08);
 }
 
-.portada-insignia p {
+.foto-insignia p {
     margin: 0;
 }
 
-.portada-insignia strong {
+.foto-insignia strong {
     font-family: var(--fuente-titulos);
 }
 
-.portada-insignia-texto {
+.foto-insignia-texto {
     color: var(--texto-suave);
     font-size: 14px;
 }
@@ -423,6 +422,12 @@ nav a {
     margin: 0;
 }
 
+.cotizar-contenido{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
 @media (max-width: 768px) {
 
     .tarjetas,
@@ -435,7 +440,7 @@ nav a {
         grid-template-columns: 1fr;
     }
 
-    #inicio img{
+    .foto-tarjeta img{
         height: 280px;
     }
 
@@ -443,4 +448,9 @@ nav a {
         grid-template-columns: repeat(2,1fr);
     }
 
+    .cotizar-contenido{
+        grid-template-columns: repeat(1,1fr);
+    }
+
 }
+
